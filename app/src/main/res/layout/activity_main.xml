@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Planer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/charmonman_bold"
+        android:text="Planner"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="80dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organize your day"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/Planer"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/charmonman_bold"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/ButtonDeo">
+        <Button
+            android:id="@+id/btn_dnevni"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="Daily planner"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button">
+        </Button>
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="Calendar"
+            android:textColor="@color/white"
+            android:id="@+id/btn_kalendar"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button">
+        </Button>
+        <Button
+            android:id="@+id/btn_beleske"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="Notes"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button">
+        </Button>
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="30 things to do before 30"
+            android:textColor="@color/white"
+            android:id="@+id/btn_list30"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_button">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LoginDeo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Save your data"
+            android:fontFamily="@font/charmonman_bold"
+            android:textColor="@color/white">
+        </TextView>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button"
+            android:text="Login"
+            android:textColor="@color/white">
+        </Button>
+    </LinearLayout>
+</RelativeLayout>
